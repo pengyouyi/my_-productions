@@ -1,0 +1,53 @@
+body{
+	background: #0d0d0d;
+	color: #fff;
+}
+/*------------------  header  -----------------*/
+#banner{
+	background: url(http://img.m.duoku.com/cimages/img/19031/19031.jpg) no-repeat 0 0;
+	height:10.75rem;
+	background-size:100% 10.75rem;
+}
+header h1{
+	background: url(http://img.m.duoku.com/cimages/img/19032/19032.jpg) no-repeat 0 0;
+	height:13.9062rem;
+	background-size:100% 13.9062rem;
+}
+/*------------------  content  -----------------*/
+.content{
+	width:16.875rem;
+	margin:0 auto;
+}
+.video-player{
+	height:9.5625rem;
+}
+.video-player img{
+	height:9.5625rem;
+	background-size:100% 9.5625rem;
+}
+.content p{
+	font-size: 0.4375rem;
+	margin:1rem 1.5625rem 0 1.5625rem;
+	line-height: 0.8rem;
+}
+.copyright{
+	height:4.375rem;
+	width:13.5rem;
+	margin:0 auto;
+	background: url(http://img.m.duoku.com/cimages/img/19034/19034.png) no-repeat 0 0;
+	background-size: 13.5rem 13.5rem;
+	margin-top:4rem;
+}
+.content h2{
+	font-size: 1rem;
+	text-align: center;
+	margin-top:1.5rem;
+	margin-bottom:0.75rem;
+}
+/*------------------  footer  -----------------*/
+footer{
+	background: url(http://img.m.duoku.com/cimages/img/19033/19033.png) no-repeat 0 0;
+	height:2.6563rem;
+	background-size: 100% 2.6563rem;
+	margin-bottom:2.75rem;
+}

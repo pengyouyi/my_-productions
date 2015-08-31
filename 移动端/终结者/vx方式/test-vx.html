@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>终结者，创世纪</title>
+<script type="text/javascript" src="http://img.m.duoku.com/cimages/img/h5/zepto.zea.min.js"></script>
+<script id="style" type="text/template">
+*{
+	font-family: sans-serif;
+	font-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body,html,p,h1,h2,h3{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #0d0d0d;
+	color: #fff;
+}
+/*------------------  header  -----------------*/
+#banner{
+	background: url(http://img.m.duoku.com/cimages/img/19031/19031.jpg) no-repeat 0 0;
+	height:344vx;
+	background-size:cover;
+}
+header h1{
+	background: url(http://img.m.duoku.com/cimages/img/19032/19032.jpg) no-repeat 0 0;
+	height:445vx;
+	background-size:cover;
+}
+/*------------------  content  -----------------*/
+.content{
+	//height:820vx;
+	width:540vx;
+	margin:0 auto;
+}
+.video-player{
+	height:306vx;
+	background-size:cover;
+}
+.video-player img{
+	height:306vx;
+	background-size:cover;
+}
+.content p{
+	font-size: 14vx;
+	margin:25vx  50vx 0 50vx;
+	line-height: 26vx;
+}
+.copyright{
+	height:140vx;
+	width:432vx;
+	margin:0 auto;
+	background: url(http://img.m.duoku.com/cimages/img/19034/19034.png) no-repeat 0 0;
+	background-size: cover;
+	margin-top:130vx;
+}
+.content h2{
+	font-size: 30vx;
+	text-align: center;
+	margin-top:40vx;
+	margin-bottom:20vx;
+}
+/*------------------  footer  -----------------*/
+footer{
+	background: url(http://img.m.duoku.com/cimages/img/19033/19033.png) no-repeat 0 0;
+	height:85vx;
+	background-size: cover;
+	margin-bottom:85vx;
+}
+</script>
+<style></style>
+<script>
+$(window).on("resize orientationchange", function(){
+	var vw = innerWidth;
+	if(window._vw == vw) return;
+	$("style").text(function(temp){
+		return temp.replace(/<(.)(.*?)>/g, function(str, c, exp){
+			switch(c){
+				case '=':
+					return eval(exp);
+				case '@':
+					return 'url(http://img.m.duoku.com/cimages/img/' + exp.match(/\d+/) + '/' + exp + ')';
+			}
+		}).replace(/\b(\d+)vx\b/g, function(str, val){
+			return vw / 640 * val + "px";
+		}).replace(
+			/(?:appearance|background-size|border-radius|border-image|box(-\w+)+|transform|transition(-\w+)*):[^};]+/g,
+			"-webkit-$&;-moz-$&;$&"
+		);
+	}($("#style").text()));
+	window._vw = vw;
+	setTimeout(function(){
+		$(window).trigger("resize");
+	}, 1000)
+}).trigger("resize");
+</script>
+</head>
+<body>
+	<header>
+		<div id="banner"></div>
+		<h1></h1>
+	</header>
+	<div class="content">
+		<div class="video-player" id="video-player">
+			<img id="shadeF" src="http://img.m.duoku.com/cimages/img/19035/19035.jpg"/>
+		</div>
+		<p>《终结者：创世纪》是经典科幻大片《终结者》的重启之作，在保留原有影片人物的同时，故事也追溯到莎拉·康纳的幼年时期，阿诺饰演的终结者T-800成为了她的“养父”。未来人类领袖约翰·康纳派部下凯尔·里斯“穿越”回到过去保护自己的母亲，凯尔却首先遭遇了液态金属终结者T-1000的追杀，被莎拉救下后，凯尔发现眼前的世界与预计中完全不同，一场关乎人类未来的“人机”大战正式上演……</p>
+		<div class="copyright"></div>
+		<h2>官方正版手游即将上线 敬请期待</h2>
+	</div>
+	<footer></footer>
+
+<script>
+var oBtn=document.getElementById("shadeF"),
+wrapper=document.getElementById("video-player");
+oBtn.onclick=function(){
+	var str='<object id="flash" height="100%" width="100%" data-player-playerbody="flash" type="application/x-shockwave-flash" data="http://www.iqiyi.com/common/flashplayer/20150820/MainPlayer_5_2_27_2_c3_3_7_3.swf" style=""><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="wMode" value="window"><param name="align" value="middle"><param name="bgcolor" value="#000000"><param name="swLiveConnect" value="true"><param name="loop" value="true"><param name="play" value="true"><param name="DeviceFont" value="false"><param name="allowFullScreen" value="true"><param name="menu" value="true"><param name="flashVars" value="tvId=4441474209&amp;autoplay=true&amp;isMember=false&amp;cyclePlay=false&amp;exclusive=0&amp;qiyiProduced=0&amp;share_sTime=0&amp;share_eTime=0&amp;tipdataurl=http://static.iqiyi.com/ext/common/tipdata_201501161615.xml&amp;components=fefff7e630&amp;qiyiProducedPreloader=http://www.iqiyi.com/common/flashplayer/20141229/loading.swf&amp;exclusivePreloader=http://www.iqiyi.com/player/20140120131607/loading.swf&amp;preloader=http://www.iqiyi.com/player/20140218112703/loading.swf&amp;vipPreloader=http://www.iqiyi.com/common/flashplayer/20150608/vip_loading.swf&amp;adurl=http://www.iqiyi.com/common/flashplayer/20150825/am-3-3-14.swf&amp;flashP2PCoreUrl=http://www.iqiyi.com/common/flashplayer/20150811/30116.swf&amp;videoIsFromQidan=lianbo&amp;cpnc=a370eba1b26a0b23ec80ce6ead0b8e31&amp;cpnv=1.0&amp;origin=flash&amp;outsite=false&amp;yhls=1523699425414&amp;playerCTime=1440731258246&amp;pageCTime=1440731258122&amp;pageTmpltType=ugcalbumtplt&amp;browserType=CHROME&amp;webEventID=a68e5ab7e613d5fc9ed986a22d72ba6e&amp;definitionID=0618394df9b1f9965bf8b91da71866ce"><div id="qiyi_flash_install" style="height:100%;background: rgb(0, 0, 0); "><div style="top: 50%; width: 100%; text-align: center; margin-top: -50px; position: absolute;"><p><a style="padding: 10px; color: rgb(255, 255, 255); font-size: 14px;" href="http://www.adobe.com/go/getflashplayer" target="_blank">主人，没有安装flash player不能播放啊~~请您<span class="green">立即安装</span></a></p><p style="margin-top: 40px;"><a style="padding: 10px; color: rgb(255, 255, 255); font-size: 14px;" href="http://mbdapp.iqiyi.com/j/ot/QIYImedia_0_08.exe" target="_blank">打死也不想装Flash？可以试试我们的<span class="green">桌面客户端</span>，用过的都觉得好！</a></p></div></div></object>';
+	wrapper.innerHTML=str;
+}
+</script>
+</body>
+</html>
